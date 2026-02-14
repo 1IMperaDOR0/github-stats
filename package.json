@@ -1,0 +1,25 @@
+{
+  "name": "github-stats",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "generateCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1IMperaDOR0/github-stats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1IMperaDOR0/github-stats/issues"
+  },
+  "homepage": "https://github.com/1IMperaDOR0/github-stats#readme",
+  "dependencies": {
+    "@octokit/graphql": "^9.0.3",
+    "@octokit/rest": "^22.0.1"
+  }
+}
