@@ -2,55 +2,105 @@ import fs from "fs";
 
 const data = JSON.parse(fs.readFileSync("stats.json"));
 
-const topLangs = Object.entries(data.languages)
-  .sort((a,b) => b[1] - a[1])
+const langs = Object.entries(data.languages)
+  .sort((a,b) => b[1]-a[1])
   .slice(0,5);
 
-const maxLang = topLangs[0][1];
+const total = langs.reduce((acc,l)=>acc+l[1],0);
 
-const langBars = topLangs.map((l,i) => {
-  const width = (l[1] / maxLang) * 120;
-  return `
-    <text x="200" y="${90 + i*25}" fill="#c9d1d9">${l[0]}</text>
-    <rect x="270" y="${80 + i*25}" width="${width}" height="10" rx="5" fill="#58a6ff"/>
+const colors = [
+  "#f1e05a",
+  "#3178c6",
+  "#b07219",
+  "#4F5D95",
+  "#e34c26"
+];
+
+let offset = 0;
+
+const langBar = langs.map((l,i)=>{
+  const percent = (l[1]/total)*300;
+  const rect = `
+    <rect x="${offset}" y="0" width="${percent}" height="12"
+    fill="${colors[i]}" rx="6"/>
   `;
+  offset += percent;
+  return rect;
 }).join("");
 
+const langLegend = langs.map((l,i)=>`
+  <g transform="translate(${20 + (i%2)*180}, ${220 + Math.floor(i/2)*28})">
+    <circle r="6" fill="${colors[i]}"/>
+    <text x="12" y="5" fill="#c9d1d9" font-size="13">
+      ${l[0]} ${(l[1]/total*100).toFixed(2)}%
+    </text>
+  </g>
+`).join("");
+
 const svg = `
-<svg width="420" height="220" xmlns="http://www.w3.org/2000/svg">
+<svg width="420" height="300" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
-    <linearGradient id="grad">
-      <stop offset="0%" stop-color="#58a6ff"/>
-      <stop offset="100%" stop-color="#bc8cff"/>
+    <linearGradient id="titleGrad">
+      <stop offset="0%" stop-color="#ff4ecd"/>
+      <stop offset="100%" stop-color="#8f8cff"/>
     </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="100%" height="100%" rx="15" fill="#0d1117"/>
+  <rect width="100%" height="100%" rx="18" fill="#0d1117"/>
 
-  <text x="20" y="35" fill="url(#grad)" font-size="18" font-weight="bold">
-    GitHub Activity
+  <!-- Title -->
+  <text x="20" y="40"
+    font-size="22"
+    font-weight="bold"
+    fill="url(#titleGrad)">
+    GitHub Stats
   </text>
 
-  <!-- Score -->
-  <text x="20" y="70" fill="#8b949e">Score</text>
-  <text x="20" y="95" fill="#ffffff" font-size="24">
-    ${data.score}
+  <!-- Stats -->
+  <g fill="#c9d1d9" font-size="15">
+    <text x="20" y="80">★ Stars</text>
+    <text x="150" y="80">${data.stars}</text>
+
+    <text x="20" y="110">↻ Commits</text>
+    <text x="150" y="110">${data.contributions.commits}</text>
+
+    <text x="20" y="140">⇄ PRs</text>
+    <text x="150" y="140">${data.contributions.prs}</text>
+
+    <text x="20" y="170">⚠ Issues</text>
+    <text x="150" y="170">${data.contributions.issues}</text>
+
+    <text x="20" y="200">Score</text>
+    <text x="150" y="200" fill="#58a6ff">${data.score}</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="20" y1="215" x2="400" y2="215" stroke="#30363d"/>
+
+  <!-- Languages Title -->
+  <text x="20" y="245"
+    fill="url(#titleGrad)"
+    font-size="18"
+    font-weight="bold">
+    Most Used Languages
   </text>
 
-  <!-- Contributions -->
-  <text x="20" y="130" fill="#8b949e">Commits</text>
-  <rect x="100" y="120" width="${data.contributions.commits/5}" height="8" rx="4" fill="#3fb950"/>
+  <!-- Bar -->
+  <g transform="translate(20,260)" filter="url(#glow)">
+    ${langBar}
+  </g>
 
-  <text x="20" y="155" fill="#8b949e">PRs</text>
-  <rect x="100" y="145" width="${data.contributions.prs*5}" height="8" rx="4" fill="#f2cc60"/>
-
-  <text x="20" y="180" fill="#8b949e">Issues</text>
-  <rect x="100" y="170" width="${data.contributions.issues*5}" height="8" rx="4" fill="#ff7b72"/>
-
-  <!-- Languages -->
-  <text x="200" y="60" fill="#8b949e">Top Languages</text>
-  ${langBars}
+  <!-- Legend -->
+  ${langLegend}
 
 </svg>
 `;
