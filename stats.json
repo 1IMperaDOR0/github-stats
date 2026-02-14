@@ -1,0 +1,22 @@
+{
+  "languages": {
+    "JavaScript": 148427,
+    "CSS": 91183,
+    "HTML": 228065,
+    "TypeScript": 1195022,
+    "Astro": 190771,
+    "Shell": 5653,
+    "Python": 103583,
+    "Dart": 31180,
+    "C++": 12679,
+    "Java": 2332,
+    "Jupyter Notebook": 20579
+  },
+  "contributions": {
+    "total": 259,
+    "commits": 246,
+    "prs": 0,
+    "issues": 0
+  },
+  "score": 246
+}
