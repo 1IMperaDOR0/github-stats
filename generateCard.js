@@ -29,7 +29,7 @@ const langBar = langs.map((l,i)=>{
 }).join("");
 
 const langLegend = langs.map((l,i)=>`
-  <g transform="translate(${20 + (i%2)*180}, ${220 + Math.floor(i/2)*28})">
+  <g transform="translate(${20 + (i%2)*180}, ${300 + Math.floor(i/2)*28})">
     <circle r="6" fill="${colors[i]}"/>
     <text x="12" y="5" fill="#c9d1d9" font-size="13">
       ${l[0]} ${(l[1]/total*100).toFixed(2)}%
