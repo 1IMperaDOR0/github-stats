@@ -77,35 +77,35 @@
 
   <!-- Legend -->
   
-  <g transform="translate(20, 220)">
+  <g transform="translate(20, 300)">
     <circle r="6" fill="#f1e05a"/>
     <text x="12" y="5" fill="#c9d1d9" font-size="13">
       TypeScript 64.05%
     </text>
   </g>
 
-  <g transform="translate(200, 220)">
+  <g transform="translate(200, 300)">
     <circle r="6" fill="#3178c6"/>
     <text x="12" y="5" fill="#c9d1d9" font-size="13">
       HTML 12.22%
     </text>
   </g>
 
-  <g transform="translate(20, 248)">
+  <g transform="translate(20, 328)">
     <circle r="6" fill="#b07219"/>
     <text x="12" y="5" fill="#c9d1d9" font-size="13">
       Astro 10.22%
     </text>
   </g>
 
-  <g transform="translate(200, 248)">
+  <g transform="translate(200, 328)">
     <circle r="6" fill="#4F5D95"/>
     <text x="12" y="5" fill="#c9d1d9" font-size="13">
       JavaScript 7.95%
     </text>
   </g>
 
-  <g transform="translate(20, 276)">
+  <g transform="translate(20, 356)">
     <circle r="6" fill="#e34c26"/>
     <text x="12" y="5" fill="#c9d1d9" font-size="13">
       Python 5.55%
