@@ -38,7 +38,7 @@ const langLegend = langs.map((l,i)=>`
 `).join("");
 
 const svg = `
-<svg width="420" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="350" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
     <linearGradient id="titleGrad">

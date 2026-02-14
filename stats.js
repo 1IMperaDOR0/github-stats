@@ -6,25 +6,25 @@ const token = process.env.GH_TOKEN;
 const username = "1imperador0";
 
 const octokit = new Octokit({ auth: token });
-
 const graphqlWithAuth = graphql.defaults({
-  headers: {
-    authorization: `token ${token}`,
-  },
+  headers: { authorization: `token ${token}` },
 });
 
-async function getLanguages() {
+async function getReposData() {
   const repos = await octokit.repos.listForUser({
     username,
-    per_page: 100
+    per_page: 100,
   });
 
   let languages = {};
+  let totalStars = 0;
 
   for (const repo of repos.data) {
+    totalStars += repo.stargazers_count;
+
     const langs = await octokit.repos.listLanguages({
       owner: username,
-      repo: repo.name
+      repo: repo.name,
     });
 
     for (const [lang, value] of Object.entries(langs.data)) {
@@ -32,7 +32,7 @@ async function getLanguages() {
     }
   }
 
-  return languages;
+  return { languages, totalStars };
 }
 
 async function getContributions() {
@@ -40,9 +40,7 @@ async function getContributions() {
     query {
       user(login: "${username}") {
         contributionsCollection {
-          contributionCalendar {
-            totalContributions
-          }
+          contributionCalendar { totalContributions }
           totalCommitContributions
           totalPullRequestContributions
           totalIssueContributions
@@ -55,7 +53,7 @@ async function getContributions() {
 }
 
 async function run() {
-  const languages = await getLanguages();
+  const { languages, totalStars } = await getReposData();
   const contrib = await getContributions();
 
   const score =
@@ -64,14 +62,15 @@ async function run() {
     (contrib.totalIssueContributions * 2);
 
   const output = {
+    stars: totalStars,
     languages,
     contributions: {
       total: contrib.contributionCalendar.totalContributions,
       commits: contrib.totalCommitContributions,
       prs: contrib.totalPullRequestContributions,
-      issues: contrib.totalIssueContributions
+      issues: contrib.totalIssueContributions,
     },
-    score
+    score,
   };
 
   fs.writeFileSync("stats.json", JSON.stringify(output, null, 2));
