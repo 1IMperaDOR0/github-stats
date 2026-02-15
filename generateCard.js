@@ -38,7 +38,7 @@ const langLegend = langs.map((l,i)=>`
 `).join("");
 
 const svg = `
-<svg width="355" height="380" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="380" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
 
@@ -117,7 +117,7 @@ const svg = `
   </g>
 
   <!-- Divider -->
-  <line x1="20" y1="215" x2="335" y2="215" stroke="#30363d"/>
+  <line x1="20" y1="215" x2="340" y2="215" stroke="#30363d"/>
 
   <!-- Languages Title -->
   <text x="20" y="245" class="title" fill="url(#titleGrad)" font-size="18">
