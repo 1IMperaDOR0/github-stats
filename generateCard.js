@@ -31,7 +31,7 @@ const langBar = langs.map((l,i)=>{
 const langLegend = langs.map((l,i)=>`
   <g transform="translate(${20 + (i%2)*180}, ${300 + Math.floor(i/2)*28})">
     <circle r="6" fill="${colors[i]}"/>
-    <text x="12" y="5" fill="#c9d1d9" font-size="13">
+    <text x="12" y="5" class="legend">
       ${l[0]} ${(l[1]/total*100).toFixed(2)}%
     </text>
   </g>
@@ -41,6 +41,41 @@ const svg = `
 <svg width="355" height="380" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
+
+    <style>
+      text {
+        font-family: monospace;
+        letter-spacing: 0.6px;
+      }
+
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .stat-label {
+        fill: #8b949e;
+        font-size: 14px;
+      }
+
+      .stat-value {
+        fill: #c9d1d9;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .score {
+        fill: #58a6ff;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .legend {
+        fill: #c9d1d9;
+        font-size: 13px;
+      }
+    </style>
+
     <linearGradient id="titleGrad">
       <stop offset="0%" stop-color="#ff4ecd"/>
       <stop offset="100%" stop-color="#8f8cff"/>
@@ -53,44 +88,39 @@ const svg = `
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
   </defs>
 
   <rect width="100%" height="100%" rx="18" fill="#0d1117"/>
 
   <!-- Title -->
-  <text x="20" y="40"
-    font-size="22"
-    font-weight="bold"
-    fill="url(#titleGrad)">
+  <text x="20" y="40" class="title" fill="url(#titleGrad)">
     GitHub Stats
   </text>
 
   <!-- Stats -->
-  <g fill="#c9d1d9" font-size="15">
-    <text x="20" y="80">★ Stars</text>
-    <text x="150" y="80">${data.stars}</text>
+  <g>
+    <text x="20" y="80" class="stat-label">★ Stars</text>
+    <text x="150" y="80" class="stat-value">${data.stars}</text>
 
-    <text x="20" y="110">↻ Commits</text>
-    <text x="150" y="110">${data.contributions.commits}</text>
+    <text x="20" y="110" class="stat-label">↻ Commits</text>
+    <text x="150" y="110" class="stat-value">${data.contributions.commits}</text>
 
-    <text x="20" y="140">⇄ PRs</text>
-    <text x="150" y="140">${data.contributions.prs}</text>
+    <text x="20" y="140" class="stat-label">⇄ PRs</text>
+    <text x="150" y="140" class="stat-value">${data.contributions.prs}</text>
 
-    <text x="20" y="170">⚠ Issues</text>
-    <text x="150" y="170">${data.contributions.issues}</text>
+    <text x="20" y="170" class="stat-label">⚠ Issues</text>
+    <text x="150" y="170" class="stat-value">${data.contributions.issues}</text>
 
-    <text x="20" y="200">Score</text>
-    <text x="150" y="200" fill="#58a6ff">${data.score}</text>
+    <text x="20" y="200" class="stat-label">Score</text>
+    <text x="150" y="200" class="score">${data.score}</text>
   </g>
 
   <!-- Divider -->
   <line x1="20" y1="215" x2="335" y2="215" stroke="#30363d"/>
 
   <!-- Languages Title -->
-  <text x="20" y="245"
-    fill="url(#titleGrad)"
-    font-size="18"
-    font-weight="bold">
+  <text x="20" y="245" class="title" fill="url(#titleGrad)" font-size="18">
     Most Used Languages
   </text>
 
