@@ -91,7 +91,7 @@ const svg = `
 
   </defs>
 
-  <rect width="100%" height="100%" rx="18" fill="#0d1117"/>
+  <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
   <!-- Title -->
   <text x="20" y="40" class="title" fill="url(#titleGrad)">
