@@ -1,5 +1,5 @@
 
-<svg width="355" height="380" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="380" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
 
@@ -65,7 +65,7 @@
     <text x="150" y="80" class="stat-value">6</text>
 
     <text x="20" y="110" class="stat-label">↻ Commits</text>
-    <text x="150" y="110" class="stat-value">256</text>
+    <text x="150" y="110" class="stat-value">257</text>
 
     <text x="20" y="140" class="stat-label">⇄ PRs</text>
     <text x="150" y="140" class="stat-value">0</text>
@@ -74,11 +74,11 @@
     <text x="150" y="170" class="stat-value">0</text>
 
     <text x="20" y="200" class="stat-label">Score</text>
-    <text x="150" y="200" class="score">256</text>
+    <text x="150" y="200" class="score">257</text>
   </g>
 
   <!-- Divider -->
-  <line x1="20" y1="215" x2="335" y2="215" stroke="#30363d"/>
+  <line x1="20" y1="215" x2="340" y2="215" stroke="#30363d"/>
 
   <!-- Languages Title -->
   <text x="20" y="245" class="title" fill="url(#titleGrad)" font-size="18">
