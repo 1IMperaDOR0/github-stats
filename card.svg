@@ -62,10 +62,10 @@
   <!-- Stats -->
   <g>
     <text x="20" y="80" class="stat-label">★ Stars</text>
-    <text x="150" y="80" class="stat-value">6</text>
+    <text x="150" y="80" class="stat-value">7</text>
 
     <text x="20" y="110" class="stat-label">↻ Commits</text>
-    <text x="150" y="110" class="stat-value">258</text>
+    <text x="150" y="110" class="stat-value">260</text>
 
     <text x="20" y="140" class="stat-label">⇄ PRs</text>
     <text x="150" y="140" class="stat-value">0</text>
@@ -74,7 +74,7 @@
     <text x="150" y="170" class="stat-value">0</text>
 
     <text x="20" y="200" class="stat-label">Score</text>
-    <text x="150" y="200" class="score">258</text>
+    <text x="150" y="200" class="score">260</text>
   </g>
 
   <!-- Divider -->
@@ -88,19 +88,19 @@
   <!-- Bar -->
   <g transform="translate(20,260)" filter="url(#glow)">
     
-    <rect x="0" y="0" width="191.62509520946082" height="12"
+    <rect x="0" y="0" width="192.50071945186232" height="12"
     fill="#f1e05a" rx="6"/>
   
-    <rect x="191.62509520946082" y="0" width="36.570855882942475" height="12"
+    <rect x="192.50071945186232" y="0" width="36.33639241443813" height="12"
     fill="#3178c6" rx="6"/>
   
-    <rect x="228.1959510924033" y="0" width="30.590659450791744" height="12"
+    <rect x="228.83711186630046" y="0" width="30.275856888328374" height="12"
     fill="#b07219" rx="6"/>
   
-    <rect x="258.786610543195" y="0" width="24.60356784926839" height="12"
+    <rect x="259.1129687546288" y="0" width="24.448138100901005" height="12"
     fill="#4F5D95" rx="6"/>
   
-    <rect x="283.39017839246344" y="0" width="16.60982160753658" height="12"
+    <rect x="283.56110685552983" y="0" width="16.438893144470164" height="12"
     fill="#e34c26" rx="6"/>
   
   </g>
@@ -110,35 +110,35 @@
   <g transform="translate(20, 300)">
     <circle r="6" fill="#f1e05a"/>
     <text x="12" y="5" class="legend">
-      TypeScript 63.88%
+      TypeScript 64.17%
     </text>
   </g>
 
   <g transform="translate(200, 300)">
     <circle r="6" fill="#3178c6"/>
     <text x="12" y="5" class="legend">
-      HTML 12.19%
+      HTML 12.11%
     </text>
   </g>
 
   <g transform="translate(20, 328)">
     <circle r="6" fill="#b07219"/>
     <text x="12" y="5" class="legend">
-      Astro 10.20%
+      Astro 10.09%
     </text>
   </g>
 
   <g transform="translate(200, 328)">
     <circle r="6" fill="#4F5D95"/>
     <text x="12" y="5" class="legend">
-      JavaScript 8.20%
+      JavaScript 8.15%
     </text>
   </g>
 
   <g transform="translate(20, 356)">
     <circle r="6" fill="#e34c26"/>
     <text x="12" y="5" class="legend">
-      Python 5.54%
+      Python 5.48%
     </text>
   </g>
 
