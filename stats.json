@@ -10,14 +10,14 @@
     "Jupyter Notebook": 4425036,
     "Python": 103750,
     "Dart": 31180,
-    "C++": 12679,
-    "Java": 5735
+    "Java": 16099,
+    "C++": 12679
   },
   "contributions": {
-    "total": 290,
-    "commits": 275,
+    "total": 291,
+    "commits": 276,
     "prs": 0,
     "issues": 0
   },
-  "score": 275
+  "score": 276
 }
