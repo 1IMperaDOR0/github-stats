@@ -1,23 +1,23 @@
 {
   "stars": 7,
   "languages": {
-    "JavaScript": 154050,
-    "CSS": 91883,
-    "HTML": 228959,
-    "TypeScript": 1217697,
+    "JavaScript": 154653,
+    "CSS": 92473,
+    "HTML": 229313,
+    "TypeScript": 1219219,
     "Astro": 190771,
     "Shell": 5653,
     "Jupyter Notebook": 5870124,
-    "Python": 106993,
+    "Python": 106904,
     "Dart": 31180,
-    "Java": 14023,
+    "Java": 16433,
     "C++": 12679
   },
   "contributions": {
-    "total": 293,
-    "commits": 278,
+    "total": 296,
+    "commits": 281,
     "prs": 0,
     "issues": 0
   },
-  "score": 278
+  "score": 281
 }
