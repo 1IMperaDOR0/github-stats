@@ -65,7 +65,7 @@
     <text x="150" y="80" class="stat-value">7</text>
 
     <text x="20" y="110" class="stat-label">↻ Commits</text>
-    <text x="150" y="110" class="stat-value">284</text>
+    <text x="150" y="110" class="stat-value">290</text>
 
     <text x="20" y="140" class="stat-label">⇄ PRs</text>
     <text x="150" y="140" class="stat-value">0</text>
@@ -74,7 +74,7 @@
     <text x="150" y="170" class="stat-value">0</text>
 
     <text x="20" y="200" class="stat-label">Score</text>
-    <text x="150" y="200" class="score">284</text>
+    <text x="150" y="200" class="score">290</text>
   </g>
 
   <!-- Divider -->
@@ -88,19 +88,19 @@
   <!-- Bar -->
   <g transform="translate(20,260)" filter="url(#glow)">
     
-    <rect x="0" y="0" width="229.75425685461454" height="12"
+    <rect x="0" y="0" width="229.74727290137932" height="12"
     fill="#f1e05a" rx="6"/>
   
-    <rect x="229.75425685461454" y="0" width="47.75077160443493" height="12"
+    <rect x="229.74727290137932" y="0" width="47.75843934839257" height="12"
     fill="#3178c6" rx="6"/>
   
-    <rect x="277.50502845904947" y="0" width="8.975217201902758" height="12"
+    <rect x="277.5057122497719" y="0" width="8.974944377807692" height="12"
     fill="#b07219" rx="6"/>
   
-    <rect x="286.4802456609522" y="0" width="7.466699056853257" height="12"
+    <rect x="286.48065662757955" y="0" width="7.4664720879267685" height="12"
     fill="#4F5D95" rx="6"/>
   
-    <rect x="293.9469447178055" y="0" width="6.0530552821945" height="12"
+    <rect x="293.9471287155063" y="0" width="6.052871284493652" height="12"
     fill="#e34c26" rx="6"/>
   
   </g>
