@@ -14,6 +14,18 @@
     }
   </style>
 
+  <linearGradient id="titleGrad">
+    <stop offset="0%" stop-color="#ff4ecd"/> 
+    <stop offset="100%" stop-color="#8f8cff"/> 
+  </linearGradient> 
+
+  <filter id="glow"> 
+    <feGaussianBlur stdDeviation="6" result="coloredBlur"/> 
+    <feMerge> <feMergeNode in="coloredBlur"/> 
+    <feMergeNode in="SourceGraphic"/> 
+    </feMerge> 
+  </filter>
+
   <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
   <text x="20" y="40" class="title" fill="url(#titleGrad)">
@@ -22,19 +34,19 @@
 
   <g transform="translate(20,70)">
     
-  <rect x="0" y="0" width="229.74895140931892" height="12"
+  <rect x="0" y="0" width="229.73852107874896" height="12"
   fill="#f1e05a" rx="6"/>
   
-  <rect x="229.74895140931892" y="0" width="47.75878826622135" height="12"
+  <rect x="229.73852107874896" y="0" width="47.75662007373916" height="12"
   fill="#3178c6" rx="6"/>
   
-  <rect x="277.5077396755403" y="0" width="8.975009947749852" height="12"
+  <rect x="277.49514115248815" y="0" width="8.97460249291687" height="12"
   fill="#b07219" rx="6"/>
   
-  <rect x="286.48274962329015" y="0" width="7.466526637138701" height="12"
+  <rect x="286.469743645405" y="0" width="7.466187665663283" height="12"
   fill="#4F5D95" rx="6"/>
   
-  <rect x="293.94927626042886" y="0" width="6.05072373957117" height="12"
+  <rect x="293.93593131106826" y="0" width="6.064068688931743" height="12"
   fill="#e34c26" rx="6"/>
   
   </g>
