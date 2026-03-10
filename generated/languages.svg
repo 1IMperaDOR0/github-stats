@@ -1,48 +1,48 @@
 
-<svg width="360" height="240" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="260" xmlns="http://www.w3.org/2000/svg">
 
-<style>
-text{
-font-family:monospace;
-letter-spacing:.6px;
-fill:#c9d1d9;
-}
+  <style>
+    text{
+      font-family:monospace;
+      letter-spacing:.6px;
+      fill:#c9d1d9;
+    }
 
-.title{
-font-size:22px;
-font-weight:700;
-}
-</style>
+    .title{
+      font-size:22px;
+      font-weight:700;
+    }
+  </style>
 
-<rect width="100%" height="100%" rx="18" fill="#010409"/>
+  <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
-<text x="20" y="40" class="title" fill="#8f8cff">
-Top Languages
-</text>
+  <text x="20" y="40" class="title" fill="url(#titleGrad)">
+    Top Languages
+  </text>
 
-<g transform="translate(20,70)">
-
-  <rect x="0" y="0" width="229.766157529882" height="12"
+  <g transform="translate(20,70)">
+    
+  <rect x="0" y="0" width="229.74895140931892" height="12"
   fill="#f1e05a" rx="6"/>
   
-  <rect x="229.766157529882" y="0" width="47.76236496793779" height="12"
+  <rect x="229.74895140931892" y="0" width="47.75878826622135" height="12"
   fill="#3178c6" rx="6"/>
   
-  <rect x="277.5285224978198" y="0" width="8.975682094901204" height="12"
+  <rect x="277.5077396755403" y="0" width="8.975009947749852" height="12"
   fill="#b07219" rx="6"/>
   
-  <rect x="286.504204592721" y="0" width="7.467085812519994" height="12"
+  <rect x="286.48274962329015" y="0" width="7.466526637138701" height="12"
   fill="#4F5D95" rx="6"/>
   
-  <rect x="293.971290405241" y="0" width="6.02870959475899" height="12"
+  <rect x="293.94927626042886" y="0" width="6.05072373957117" height="12"
   fill="#e34c26" rx="6"/>
   
-</g>
+  </g>
 
-
+  
 <g transform="translate(20, 120)">
   <circle r="6" fill="#f1e05a"/>
-  <text x="12" y="5">Jupyter Notebook 76.59%</text>
+  <text x="12" y="5">Jupyter Notebook 76.58%</text>
 </g>
 
 <g transform="translate(20, 148)">
@@ -62,7 +62,7 @@ Top Languages
 
 <g transform="translate(20, 232)">
   <circle r="6" fill="#e34c26"/>
-  <text x="12" y="5">JavaScript 2.01%</text>
+  <text x="12" y="5">JavaScript 2.02%</text>
 </g>
 
 
