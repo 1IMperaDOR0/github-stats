@@ -43,54 +43,66 @@ const langLegend = langs.map((l,i)=>`
 const statsSVG = `
 <svg width="360" height="240" xmlns="http://www.w3.org/2000/svg">
 
-<style>
-text{
-font-family:monospace;
-letter-spacing:.6px;
-}
+  <style>
+    text{
+      font-family:monospace;
+      letter-spacing:.6px;
+    }
 
-.label{
-fill:#8b949e;
-font-size:14px;
-}
+    .label{
+      fill:#8b949e;
+      font-size:14px;
+    }
 
-.value{
-fill:#c9d1d9;
-font-size:15px;
-font-weight:bold;
-}
+    .value{
+      fill:#c9d1d9;
+      font-size:15px;
+      font-weight:bold;
+    }
 
-.score{
-fill:#58a6ff;
-font-weight:bold;
-}
+    .score{
+      fill:#58a6ff;
+      font-weight:bold;
+    }
 
-.title{
-font-size:22px;
-font-weight:700;
-}
-</style>
+    .title{
+      font-size:22px;
+      font-weight:700;
+    }
+  </style>
 
-<rect width="100%" height="100%" rx="18" fill="#010409"/>
+  <linearGradient id="titleGrad">
+    <stop offset="0%" stop-color="#ff4ecd"/> 
+    <stop offset="100%" stop-color="#8f8cff"/> 
+  </linearGradient> 
 
-<text x="20" y="40" class="title" fill="#8f8cff">
-GitHub Stats
-</text>
+  <filter id="glow"> 
+    <feGaussianBlur stdDeviation="6" result="coloredBlur"/> 
+    <feMerge> <feMergeNode in="coloredBlur"/> 
+    <feMergeNode in="SourceGraphic"/> 
+    </feMerge> 
+  </filter>
 
-<text x="20" y="80" class="label">Stars</text>
-<text x="150" y="80" class="value">${data.stars}</text>
+  <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
-<text x="20" y="110" class="label">Commits</text>
-<text x="150" y="110" class="value">${data.contributions.commits}</text>
+  <text x="20" y="40" class="title" fill="url(#titleGrad)">
+    GitHub Stats
+  </text>
 
-<text x="20" y="140" class="label">PRs</text>
-<text x="150" y="140" class="value">${data.contributions.prs}</text>
+  <text x="20" y="80" class="label">Stars</text>
+  <text x="150" y="80" class="value">${data.stars}</text>
 
-<text x="20" y="170" class="label">Issues</text>
-<text x="150" y="170" class="value">${data.contributions.issues}</text>
+  <text x="20" y="110" class="label">Commits</text>
+  <text x="150" y="110" class="value">${data.contributions.commits}</text>
 
-<text x="20" y="200" class="label">Score</text>
-<text x="150" y="200" class="score">${data.score}</text>
+  <text x="20" y="140" class="label">PRs</text>
+  <text x="150" y="140" class="value">${data.contributions.prs}</text>
+
+  <text x="20" y="170" class="label">Issues</text>
+  <text x="150" y="170" class="value">${data.contributions.issues}</text>
+
+  <text x="20" y="200" class="label">Score</text>
+  <text x="150" y="200" class="score">${data.score}</text>
 
 </svg>
 `;
@@ -98,32 +110,32 @@ GitHub Stats
 /* ---------- LANGUAGE CARD ---------- */
 
 const langSVG = `
-<svg width="360" height="240" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="260" xmlns="http://www.w3.org/2000/svg">
 
-<style>
-text{
-font-family:monospace;
-letter-spacing:.6px;
-fill:#c9d1d9;
-}
+  <style>
+    text{
+      font-family:monospace;
+      letter-spacing:.6px;
+      fill:#c9d1d9;
+    }
 
-.title{
-font-size:22px;
-font-weight:700;
-}
-</style>
+    .title{
+      font-size:22px;
+      font-weight:700;
+    }
+  </style>
 
-<rect width="100%" height="100%" rx="18" fill="#010409"/>
+  <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
-<text x="20" y="40" class="title" fill="#8f8cff">
-Top Languages
-</text>
+  <text x="20" y="40" class="title" fill="url(#titleGrad)">
+    Top Languages
+  </text>
 
-<g transform="translate(20,70)">
-${langBar}
-</g>
+  <g transform="translate(20,70)">
+    ${langBar}
+  </g>
 
-${langLegend}
+  ${langLegend}
 
 </svg>
 `;
