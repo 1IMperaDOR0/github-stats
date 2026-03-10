@@ -125,6 +125,18 @@ const langSVG = `
     }
   </style>
 
+  <linearGradient id="titleGrad">
+    <stop offset="0%" stop-color="#ff4ecd"/> 
+    <stop offset="100%" stop-color="#8f8cff"/> 
+  </linearGradient> 
+
+  <filter id="glow"> 
+    <feGaussianBlur stdDeviation="6" result="coloredBlur"/> 
+    <feMerge> <feMergeNode in="coloredBlur"/> 
+    <feMergeNode in="SourceGraphic"/> 
+    </feMerge> 
+  </filter>
+
   <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
   <text x="20" y="40" class="title" fill="url(#titleGrad)">
