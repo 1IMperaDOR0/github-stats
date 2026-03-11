@@ -71,23 +71,20 @@ const statsSVG = `
     }
   </style>
 
-  <linearGradient id="titleGrad">
-    <stop offset="0%" stop-color="#ff4ecd"/> 
-    <stop offset="100%" stop-color="#8f8cff"/> 
-  </linearGradient> 
-
-  <filter id="glow"> 
-    <feGaussianBlur stdDeviation="6" result="coloredBlur"/> 
-    <feMerge> <feMergeNode in="coloredBlur"/> 
-    <feMergeNode in="SourceGraphic"/> 
-    </feMerge> 
-  </filter>
+  <defs>
+    <linearGradient id="titleGrad">
+      <stop offset="0%" stop-color="#ff4ecd"/> 
+      <stop offset="100%" stop-color="#8f8cff"/> 
+    </linearGradient>
+  </defs>
 
   <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
   <text x="20" y="40" class="title" fill="url(#titleGrad)">
     GitHub Stats
   </text>
+
+  <line x1="20" y1="55" x2="340" y2="55" stroke="#30363d"/>
 
   <text x="20" y="80" class="label">Stars</text>
   <text x="150" y="80" class="value">${data.stars}</text>
@@ -125,23 +122,20 @@ const langSVG = `
     }
   </style>
 
-  <linearGradient id="titleGrad">
-    <stop offset="0%" stop-color="#ff4ecd"/> 
-    <stop offset="100%" stop-color="#8f8cff"/> 
-  </linearGradient> 
-
-  <filter id="glow"> 
-    <feGaussianBlur stdDeviation="6" result="coloredBlur"/> 
-    <feMerge> <feMergeNode in="coloredBlur"/> 
-    <feMergeNode in="SourceGraphic"/> 
-    </feMerge> 
-  </filter>
+  <defs>
+    <linearGradient id="titleGrad">
+      <stop offset="0%" stop-color="#ff4ecd"/> 
+      <stop offset="100%" stop-color="#8f8cff"/> 
+    </linearGradient>
+  </defs>
 
   <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
   <text x="20" y="40" class="title" fill="url(#titleGrad)">
     Top Languages
   </text>
+
+  <line x1="20" y1="55" x2="340" y2="55" stroke="#30363d"/>
 
   <g transform="translate(20,70)">
     ${langBar}
