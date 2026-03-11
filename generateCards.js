@@ -19,10 +19,10 @@ const colors = [
 let offset = 0;
 
 const langBar = langs.map((l,i)=>{
-  const percent = (l[1]/total)*300;
+  const widthBar = 340;
 
   const rect = `
-  <rect x="${offset}" y="0" width="${percent}" height="12"
+  <rect x="${offset}" y="0" width="${widthBar}" height="12"
   fill="${colors[i]}" rx="6"/>
   `;
 
@@ -113,7 +113,6 @@ const langSVG = `
     text{
       font-family:monospace;
       letter-spacing:.6px;
-      fill:#c9d1d9;
     }
 
     .title{
