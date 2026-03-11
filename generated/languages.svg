@@ -14,17 +14,12 @@
     }
   </style>
 
-  <linearGradient id="titleGrad">
-    <stop offset="0%" stop-color="#ff4ecd"/> 
-    <stop offset="100%" stop-color="#8f8cff"/> 
-  </linearGradient> 
-
-  <filter id="glow"> 
-    <feGaussianBlur stdDeviation="6" result="coloredBlur"/> 
-    <feMerge> <feMergeNode in="coloredBlur"/> 
-    <feMergeNode in="SourceGraphic"/> 
-    </feMerge> 
-  </filter>
+  <defs>
+    <linearGradient id="titleGrad">
+      <stop offset="0%" stop-color="#ff4ecd"/> 
+      <stop offset="100%" stop-color="#8f8cff"/> 
+    </linearGradient>
+  </defs>
 
   <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
@@ -32,21 +27,23 @@
     Top Languages
   </text>
 
+  <line x1="20" y1="55" x2="340" y2="55" stroke="#30363d"/>
+
   <g transform="translate(20,70)">
     
-  <rect x="0" y="0" width="229.73852107874896" height="12"
+  <rect x="0" y="0" width="229.7451748009439" height="12"
   fill="#f1e05a" rx="6"/>
   
-  <rect x="229.73852107874896" y="0" width="47.75662007373916" height="12"
+  <rect x="229.7451748009439" y="0" width="47.75800320827597" height="12"
   fill="#3178c6" rx="6"/>
   
-  <rect x="277.49514115248815" y="0" width="8.97460249291687" height="12"
+  <rect x="277.5031780092199" y="0" width="8.974862416727287" height="12"
   fill="#b07219" rx="6"/>
   
-  <rect x="286.469743645405" y="0" width="7.466187665663283" height="12"
+  <rect x="286.47804042594714" y="0" width="7.466403902532702" height="12"
   fill="#4F5D95" rx="6"/>
   
-  <rect x="293.93593131106826" y="0" width="6.064068688931743" height="12"
+  <rect x="293.94444432847985" y="0" width="6.055555671520132" height="12"
   fill="#e34c26" rx="6"/>
   
   </g>
