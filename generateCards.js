@@ -18,15 +18,16 @@ const colors = [
 
 let offset = 0;
 
-const langBar = langs.map((l,i)=>{
-  const widthBar = 340;
+const langBar = langs.map((l, i) => {
+  const barWidth = 340;
+  const width = (l[1] / total) * barWidth;
 
   const rect = `
-  <rect x="${offset}" y="0" width="${widthBar}" height="12"
+  <rect x="${offset}" y="0" width="${width}" height="12"
   fill="${colors[i]}" rx="6"/>
   `;
 
-  offset += widthBar;
+  offset += width;
   return rect;
 
 }).join("");
