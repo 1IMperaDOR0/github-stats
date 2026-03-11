@@ -5,6 +5,7 @@
     text{
       font-family:monospace;
       letter-spacing:.6px;
+      fill:#c9d1d9;
     }
 
     .title{
@@ -30,19 +31,19 @@
 
   <g transform="translate(20,70)">
     
-  <rect x="0" y="0" width="245.06049672755128" height="12"
+  <rect x="0" y="0" width="245.0598573193126" height="12"
   fill="#f1e05a" rx="6"/>
   
-  <rect x="245.06049672755128" y="0" width="50.941657421429404" height="12"
+  <rect x="245.0598573193126" y="0" width="50.941524505207155" height="12"
   fill="#3178c6" rx="6"/>
   
-  <rect x="296.0021541489807" y="0" width="9.57314661259029" height="12"
+  <rect x="296.00138182451974" y="0" width="9.573121634477147" height="12"
   fill="#b07219" rx="6"/>
   
-  <rect x="305.575300761571" y="0" width="7.964130914647065" height="12"
+  <rect x="305.5745034589969" y="0" width="7.964110134753982" height="12"
   fill="#4F5D95" rx="6"/>
   
-  <rect x="313.53943167621804" y="0" width="6.460568323781951" height="12"
+  <rect x="313.5386135937509" y="0" width="6.461386406249103" height="12"
   fill="#e34c26" rx="6"/>
   
   </g>
