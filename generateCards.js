@@ -34,7 +34,7 @@ const langBar = langs.map((l, i) => {
 
 const langLegend = langs.map((l,i)=>`
   <g transform="translate(20, ${120 + i*28})">
-    <circle cx="0" cy="0" r="6" fill="${colors[i]}"/>
+    <circle x="20" cx="0" cy="0" r="6" fill="${colors[i]}"/>
     <text x="12" y="4">${l[0]} ${(l[1]/total*100).toFixed(2)}%</text>
   </g>
 `).join("");
@@ -110,6 +110,13 @@ const statsSVG = `
 const langSVG = `
 <svg width="360" height="260" xmlns="http://www.w3.org/2000/svg">
 
+  <defs>
+    <linearGradient id="titleGrad">
+      <stop offset="0%" stop-color="#ff4ecd"/> 
+      <stop offset="100%" stop-color="#8f8cff"/> 
+    </linearGradient>
+  </defs>
+
   <style>
     text{
       font-family:monospace;
@@ -120,19 +127,13 @@ const langSVG = `
     .title{
       font-size:22px;
       font-weight:700;
+      fill:url(#titleGrad);
     }
   </style>
 
-  <defs>
-    <linearGradient id="titleGrad">
-      <stop offset="0%" stop-color="#ff4ecd"/> 
-      <stop offset="100%" stop-color="#8f8cff"/> 
-    </linearGradient>
-  </defs>
-
   <rect width="100%" height="100%" rx="18" fill="#010409"/>
 
-  <text x="20" y="40" class="title" fill="url(#titleGrad)">
+  <text x="20" y="40" class="title">
     Top Languages
   </text>
 
