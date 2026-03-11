@@ -19,7 +19,7 @@ const colors = [
 let offset = 0;
 
 const langBar = langs.map((l, i) => {
-  const barWidth = 340;
+  const barWidth = 320;
   const width = (l[1] / total) * barWidth;
 
   const rect = `
@@ -33,10 +33,10 @@ const langBar = langs.map((l, i) => {
 }).join("");
 
 const langLegend = langs.map((l,i)=>`
-<g transform="translate(20, ${120 + i*28})">
-  <circle r="6" fill="${colors[i]}"/>
-  <text x="12" y="5">${l[0]} ${(l[1]/total*100).toFixed(2)}%</text>
-</g>
+  <g transform="translate(20, ${120 + i*28})">
+    <circle cx="0" cy="0" r="6" fill="${colors[i]}"/>
+    <text x="12" y="4">${l[0]} ${(l[1]/total*100).toFixed(2)}%</text>
+  </g>
 `).join("");
 
 /* ---------- STATS CARD ---------- */
