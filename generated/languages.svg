@@ -30,19 +30,19 @@
 
   <g transform="translate(20,70)">
     
-  <rect x="0" y="0" width="340" height="12"
+  <rect x="0" y="0" width="260.3775250854969" height="12"
   fill="#f1e05a" rx="6"/>
   
-  <rect x="340" y="0" width="340" height="12"
+  <rect x="260.3775250854969" y="0" width="54.12566635695468" height="12"
   fill="#3178c6" rx="6"/>
   
-  <rect x="680" y="0" width="340" height="12"
+  <rect x="314.5031914424516" y="0" width="10.17149746920688" height="12"
   fill="#b07219" rx="6"/>
   
-  <rect x="1020" y="0" width="340" height="12"
+  <rect x="324.6746889116585" y="0" width="8.461913383445621" height="12"
   fill="#4F5D95" rx="6"/>
   
-  <rect x="1360" y="0" width="340" height="12"
+  <rect x="333.1366022951041" y="0" width="6.863397704895876" height="12"
   fill="#e34c26" rx="6"/>
   
   </g>
