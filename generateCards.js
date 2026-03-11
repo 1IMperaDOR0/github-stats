@@ -26,7 +26,7 @@ const langBar = langs.map((l,i)=>{
   fill="${colors[i]}" rx="6"/>
   `;
 
-  offset += percent;
+  offset += widthBar;
   return rect;
 
 }).join("");
