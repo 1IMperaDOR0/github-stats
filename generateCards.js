@@ -114,6 +114,7 @@ const langSVG = `
     text{
       font-family:monospace;
       letter-spacing:.6px;
+      fill:#c9d1d9;
     }
 
     .title{
