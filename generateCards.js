@@ -108,7 +108,7 @@ const statsSVG = `
 /* ---------- LANGUAGE CARD ---------- */
 
 const langSVG = `
-<svg width="360" height="275" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="273" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
     <linearGradient id="titleGrad">
