@@ -42,7 +42,7 @@ const langLegend = langs.map((l,i)=>`
 /* ---------- STATS CARD ---------- */
 
 const statsSVG = `
-<svg width="360" height="220" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="225" xmlns="http://www.w3.org/2000/svg">
 
   <style>
     text{
