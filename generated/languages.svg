@@ -52,27 +52,27 @@
   
   <g transform="translate(20, 120)">
     <circle x="20" cx="6" cy="0" r="6" fill="#f1e05a"/>
-    <text x="12" y="4">Jupyter Notebook 76.58%</text>
+    <text x="18" y="4">Jupyter Notebook 76.58%</text>
   </g>
 
   <g transform="translate(20, 148)">
     <circle x="20" cx="6" cy="0" r="6" fill="#3178c6"/>
-    <text x="12" y="4">TypeScript 15.92%</text>
+    <text x="18" y="4">TypeScript 15.92%</text>
   </g>
 
   <g transform="translate(20, 176)">
     <circle x="20" cx="6" cy="0" r="6" fill="#b07219"/>
-    <text x="12" y="4">HTML 2.99%</text>
+    <text x="18" y="4">HTML 2.99%</text>
   </g>
 
   <g transform="translate(20, 204)">
     <circle x="20" cx="6" cy="0" r="6" fill="#4F5D95"/>
-    <text x="12" y="4">Astro 2.49%</text>
+    <text x="18" y="4">Astro 2.49%</text>
   </g>
 
   <g transform="translate(20, 232)">
     <circle x="20" cx="6" cy="0" r="6" fill="#e34c26"/>
-    <text x="12" y="4">JavaScript 2.02%</text>
+    <text x="18" y="4">JavaScript 2.02%</text>
   </g>
 
 
