@@ -35,7 +35,7 @@ const langBar = langs.map((l, i) => {
 const langLegend = langs.map((l,i)=>`
   <g transform="translate(20, ${120 + i*28})">
     <circle x="20" cx="6" cy="0" r="6" fill="${colors[i]}"/>
-    <text x="12" y="4">${l[0]} ${(l[1]/total*100).toFixed(2)}%</text>
+    <text x="18" y="4">${l[0]} ${(l[1]/total*100).toFixed(2)}%</text>
   </g>
 `).join("");
 
