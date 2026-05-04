@@ -3,21 +3,21 @@
   "languages": {
     "JavaScript": 154787,
     "CSS": 92537,
-    "HTML": 290444,
-    "Python": 138102,
+    "HTML": 229313,
     "TypeScript": 1220344,
     "Astro": 190771,
     "Shell": 5653,
     "Jupyter Notebook": 5893168,
+    "Python": 113172,
     "Java": 73783,
     "Dart": 31180,
     "C++": 12679
   },
   "contributions": {
-    "total": 400,
-    "commits": 382,
+    "total": 404,
+    "commits": 387,
     "prs": 2,
     "issues": 0
   },
-  "score": 388
+  "score": 393
 }
