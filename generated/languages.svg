@@ -32,19 +32,19 @@
 
   <g transform="translate(20,70)">
     
-  <rect x="0" y="0" width="245.51192425013534" height="12"
+  <rect x="0" y="0" width="245.52281737916053" height="12"
   fill="#f1e05a" rx="6"/>
   
-  <rect x="245.51192425013534" y="0" width="50.635203200114105" height="12"
+  <rect x="245.52281737916053" y="0" width="50.62779831287379" height="12"
   fill="#3178c6" rx="6"/>
   
-  <rect x="296.14712745024946" y="0" width="9.514784643860883" height="12"
+  <rect x="296.1506156920343" y="0" width="9.513393202670745" height="12"
   fill="#b07219" rx="6"/>
   
-  <rect x="305.66191209411033" y="0" width="7.915578189173682" height="12"
+  <rect x="305.66400889470503" y="0" width="7.91442061578149" height="12"
   fill="#4F5D95" rx="6"/>
   
-  <rect x="313.577490283284" y="0" width="6.422509716715993" height="12"
+  <rect x="313.5784295104865" y="0" width="6.421570489513445" height="12"
   fill="#e34c26" rx="6"/>
   
   </g>
@@ -52,7 +52,7 @@
   
   <g transform="translate(20, 120)">
     <circle x="20" cx="6" cy="0" r="6" fill="#f1e05a"/>
-    <text x="18" y="4">Jupyter Notebook 76.72%</text>
+    <text x="18" y="4">Jupyter Notebook 76.73%</text>
   </g>
 
   <g transform="translate(20, 148)">
