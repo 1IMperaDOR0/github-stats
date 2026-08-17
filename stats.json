@@ -7,17 +7,17 @@
     "TypeScript": 1220420,
     "Astro": 190771,
     "Shell": 5653,
-    "Python": 257082,
+    "Python": 261891,
     "Jupyter Notebook": 5950971,
     "Java": 135265,
     "Dart": 31180,
     "C++": 12679
   },
   "contributions": {
-    "total": 460,
-    "commits": 444,
+    "total": 462,
+    "commits": 446,
     "prs": 2,
     "issues": 0
   },
-  "score": 450
+  "score": 452
 }

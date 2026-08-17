@@ -32,19 +32,19 @@
 
   <g transform="translate(20,70)">
     
-  <rect x="0" y="0" width="242.631953873814" height="12"
+  <rect x="0" y="0" width="242.48337846472455" height="12"
   fill="#f1e05a" rx="6"/>
   
-  <rect x="242.631953873814" y="0" width="49.758751831706135" height="12"
+  <rect x="242.48337846472455" y="0" width="49.72828211495555" height="12"
   fill="#3178c6" rx="6"/>
   
-  <rect x="292.39070570552013" y="0" width="10.481702560101176" height="12"
+  <rect x="292.2116605796801" y="0" width="10.671235747830929" height="12"
   fill="#b07219" rx="6"/>
   
-  <rect x="302.8724082656213" y="0" width="9.349509725163491" height="12"
+  <rect x="302.882896327511" y="0" width="9.343784563205128" height="12"
   fill="#4F5D95" rx="6"/>
   
-  <rect x="312.2219179907848" y="0" width="7.778082009215197" height="12"
+  <rect x="312.2266808907161" y="0" width="7.7733191092838405" height="12"
   fill="#e34c26" rx="6"/>
   
   </g>
@@ -52,17 +52,17 @@
   
   <g transform="translate(20, 120)">
     <circle x="20" cx="6" cy="0" r="6" fill="#f1e05a"/>
-    <text x="18" y="4">Jupyter Notebook 75.82%</text>
+    <text x="18" y="4">Jupyter Notebook 75.78%</text>
   </g>
 
   <g transform="translate(20, 148)">
     <circle x="20" cx="6" cy="0" r="6" fill="#3178c6"/>
-    <text x="18" y="4">TypeScript 15.55%</text>
+    <text x="18" y="4">TypeScript 15.54%</text>
   </g>
 
   <g transform="translate(20, 176)">
     <circle x="20" cx="6" cy="0" r="6" fill="#b07219"/>
-    <text x="18" y="4">Python 3.28%</text>
+    <text x="18" y="4">Python 3.33%</text>
   </g>
 
   <g transform="translate(20, 204)">
