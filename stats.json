@@ -8,16 +8,16 @@
     "Astro": 190771,
     "Shell": 5653,
     "Python": 261891,
-    "Jupyter Notebook": 5950971,
+    "Jupyter Notebook": 5964297,
     "Java": 135265,
     "Dart": 31180,
     "C++": 12679
   },
   "contributions": {
-    "total": 462,
-    "commits": 446,
+    "total": 465,
+    "commits": 449,
     "prs": 2,
     "issues": 0
   },
-  "score": 452
+  "score": 455
 }
