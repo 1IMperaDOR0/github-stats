@@ -2,22 +2,22 @@
   "stars": 8,
   "languages": {
     "JavaScript": 154787,
-    "CSS": 99060,
+    "CSS": 100479,
     "HTML": 229313,
     "TypeScript": 1220420,
     "Astro": 190771,
     "Shell": 5653,
-    "Python": 261891,
+    "Python": 290134,
     "Jupyter Notebook": 5964297,
     "Java": 135265,
     "Dart": 31180,
     "C++": 12679
   },
   "contributions": {
-    "total": 465,
-    "commits": 449,
+    "total": 473,
+    "commits": 457,
     "prs": 2,
     "issues": 0
   },
-  "score": 455
+  "score": 463
 }
