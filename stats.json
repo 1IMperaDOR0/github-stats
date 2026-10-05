@@ -5,7 +5,7 @@
     "CSS": 139607,
     "HTML": 229313,
     "TypeScript": 1220420,
-    "Python": 437402,
+    "Python": 435715,
     "Astro": 190771,
     "Shell": 5653,
     "Jupyter Notebook": 5964297,
@@ -14,10 +14,10 @@
     "C++": 12679
   },
   "contributions": {
-    "total": 406,
-    "commits": 393,
+    "total": 397,
+    "commits": 384,
     "prs": 2,
     "issues": 0
   },
-  "score": 399
+  "score": 390
 }
