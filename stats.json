@@ -3,7 +3,7 @@
   "languages": {
     "JavaScript": 155698,
     "CSS": 139607,
-    "HTML": 229313,
+    "HTML": 239913,
     "TypeScript": 1220420,
     "Java": 238671,
     "Dockerfile": 306,
@@ -15,10 +15,10 @@
     "C++": 12679
   },
   "contributions": {
-    "total": 383,
-    "commits": 370,
+    "total": 389,
+    "commits": 375,
     "prs": 2,
     "issues": 0
   },
-  "score": 376
+  "score": 381
 }
